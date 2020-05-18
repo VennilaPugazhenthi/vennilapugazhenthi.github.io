@@ -1,35 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio website</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--My Own Stylesheet-->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="topnav">
-    <a class="active" href="/index.html">Home</a>
-<!--    <a href="/file/Resume-website.pdf">Resume</a>-->
-    <a href="/resume.html">Resume</a>
-    <a>Projects</a>
-    <a>Contact</a>
-</div>
 
-<!--<div style="padding-left: 16px">-->
-<!--<h2>Welcome to my website!</h2>-->
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="file/logo_trans.png" alt="">
+                </a>
+            </div>
+
+            <div class="menu-icons open">
+                <i class="icon ion-md-menu"></i>
+            </div>
+            <ul class="nav-list">
+                <div class="menu-icons close">
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="main-message">
+            <h1>I am Vennila Pugazhenthi</h1>
+            <h3>And I'm a Developer</h3>
+            <p>This webiste is a work under progress</p>
+            <div class="cta">
+                <a href="#" class="btn">Hire me!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--<div class="topnav">-->
+<!--    <a class="active" href="index.html">Home</a>-->
+<!--&lt;!&ndash;    <a href="/file/Resume-website.pdf">Resume</a>&ndash;&gt;-->
+<!--    <a href="resume.html">Resume</a>-->
+<!--    <a>Projects</a>-->
+<!--    <a>Contact</a>-->
 <!--</div>-->
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am Vennila Pugazhenthi</h1>
-    <p>And I'm a Software Developer</p>
-      <p>This website is a work under progress</p>
-      <p>Changed</p>
-    <button>Hire me</button>
-  </div>
-</div>
+
+<!--<div class="hero-image">-->
+<!--  <div class="hero-text">-->
+<!--    <h1 style="font-size:50px">I am Vennila Pugazhenthi</h1>-->
+<!--    <p>And I'm a Software Developer</p>-->
+<!--      <p>This website is a work under progress</p>-->
+<!--      <p>Changed</p>-->
+<!--    <button>Hire me</button>-->
+<!--  </div>-->
+<!--</div>-->
 
 
-
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
