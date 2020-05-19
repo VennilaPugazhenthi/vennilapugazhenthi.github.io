@@ -121,8 +121,8 @@ nav{
 .hero{
     width: 100%;
     height: 100vh;
-    /*background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("file/VennilaP.jpeg") center no-repeat;*/
-    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("file/VennilaP_small.jpeg") center no-repeat;
+    /*background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("file/VennilaP_small.jpeg") center no-repeat;*/
+    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("file/VennilaP_smallcropped.jpeg") center no-repeat;
     background-size: cover;
     position: relative;
     /*new*/
@@ -141,6 +141,14 @@ nav{
     background-size: cover;
 }
 
+/*new*/
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
 .main-message{
     width: 100%;
@@ -280,7 +288,6 @@ footer{
     }
     .hero{
         height:80vh;
-        /*new*/
         width: 100%;
         background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%),url("file/VennilaP.jpeg") center no-repeat;
         background-size: cover;
