@@ -8,7 +8,7 @@
 }
 
 html{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
     font-size:10px;
     box-sizing: border-box;
 
@@ -132,6 +132,7 @@ nav{
     background-size: cover;
 }
 
+
 .main-message{
     width: 100%;
     max-width: 50rem;
@@ -142,6 +143,7 @@ nav{
 .main-message h1{
     font-size: 4rem;
     margin: 1rem 0;
+
 }
 .main-message h3{
     font-size:1.6rem;
@@ -158,6 +160,7 @@ nav{
     padding: 1rem 2.5rem;
     text-transform: uppercase;
     transition: background-color 650ms;
+
 }
 .btn:hover{
     background-color: #ce587b;
