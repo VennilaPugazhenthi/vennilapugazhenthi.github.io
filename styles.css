@@ -44,6 +44,12 @@ header{
     top:0;
     left: 0;
     z-index:1;
+    /*new*/
+    /*border-bottom: 50px;*/
+}
+/*new*/
+.main-message{
+    margin: 50%;
 }
 
 .container{
@@ -51,6 +57,8 @@ header{
     max-width: 98rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+    /*new*/
+    /*margin: 100px;*/
 }
 
 nav{
@@ -60,6 +68,7 @@ nav{
     justify-content: space-between;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(255,255,255,.2);
+
 }
 
 .nav-brand{
@@ -119,6 +128,8 @@ nav{
     background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("file/VennilaP.jpeg") center no-repeat;
     background-size: cover;
     position: relative;
+    /*new*/
+
 }
 
 .hero::before{
@@ -138,18 +149,31 @@ nav{
     max-width: 50rem;
     color: #fafafa;
     text-transform: uppercase;
-    transform: translateY(20%);
+    /*transform: translateY(20%);*/
+    /*new*/
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: inline;
+
+
 }
 .main-message h1{
     font-size: 4rem;
     margin: 1rem 0;
-
+    /*new*/
+    text-align: center;
 }
 .main-message h3{
     font-size:1.6rem;
+    /*new*/
+    text-align: center;
 }
 .main-message p{
     text-transform: lowercase;
+    /*new*/
+    text-align: center;
 }
 .btn{
     background-color: #eb648c;
