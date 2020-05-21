@@ -34,7 +34,8 @@ img{
 /*End of Global styles*/
 
 section{
-    padding: 5rem 0;
+    /*padding: 5rem 0;*/
+    padding: 6rem;
 }
 
 /*Navbar design*/
@@ -268,33 +269,245 @@ nav{
     color: #2867B2;
 }
 
-
-
-
-
-/*.About-me{*/
-/*    padding: 0;*/
-/*}*/
-/*.title-heading{*/
-/*    text-align: center;*/
-/*    text-transform: uppercase;*/
-/*    margin-bottom: 10rem;*/
-/*}*/
-/*.title-heading h1{*/
-/*    font-size: 4rem;*/
-/*    margin: 0.5rem 0 1rem;*/
-/*}*/
-/*.title-heading p{*/
-/*    text-transform: initial;*/
-/*}*/
-
-/*Footer*/
-footer{
-    padding:2.5rem 0;
-    background-color: #d7d4ed;
+/*Projects Design*/
+.section-heading{
     text-align: center;
-    color: rgba(0,0,0,0.7);
+    margin-bottom: 10rem;
 }
+.section-heading h1{
+    font-size: 3.5rem;
+    /*color: rgba(255,255,255,0.3);*/
+    color: rgba(128,128,128,1);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after{
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(128,128,128,1);
+    /*background-color: rgba(255);*/
+
+
+}
+.section-heading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+
+.section-heading h1::after{
+     width: 1.5rem;
+     height: 1.5rem;
+     border-radius: 100%;
+     bottom: -1rem;
+ }
+
+.section-heading h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.projects-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.projects-item:last-child{
+    margin-bottom: 0;
+}
+.profile-img{
+    width: 50rem;
+    flex: 1;
+}
+
+.has-margin-right{
+    margin-right: 5rem ;
+}
+
+
+.project-description{
+    flex: 1;
+}
+
+.project-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.project-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.project-description .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 650ms;
+}
+
+.project-description .cta:hover{
+    color: #2f67cd;
+}
+/*End of Project Design*/
+.timeline ul{
+    border-left: 4px solid #2f67cd;
+    border-radius: 0.8rem;
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+
+.timeline h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.timeline .date{
+    border-bottom: 1px solid rgba(128,128,128,1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.timeline .date::after{
+    content: "";
+    box-shadow: 0 0 0 4px #eb648c;
+    border-radius: 100%;
+    left: -5.8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #eb648c;
+}
+/*End of Experience*/
+
+/*Contact Design*/
+.contact{
+    /*background-color: #2f67cd;*/
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding:1rem;
+    margin-bottom: 5px;
+    /*border: none;*/
+    outline-color: #2f67cd;
+}
+input[type="submit"]{
+    width: initial;
+    background-color: #eb648c;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: #2f67cd;
+    background-color: #eb648c;
+}
+
+/* End of Contact Design*/
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding:2rem 0;
+    background-color: #d7d4ed;
+    position: relative;
+
+}
+
+/*footer{*/
+/*    padding:2.5rem 0;*/
+/*    background-color: #d7d4ed;*/
+/*    text-align: center;*/
+/*    color: rgba(0,0,0,0.7);*/
+/*}*/
+/*footer p{*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*}*/
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color:#2f67cd ;
+    top:-2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+}
+.up i{
+    color: #eb648c;
+    font-size: 2rem;
+    margin: auto;
+
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+
+/*Start of Animation*/
+
+
+
+
 
 /*Media queries*/
 @media screen and (min-width: 350px){
