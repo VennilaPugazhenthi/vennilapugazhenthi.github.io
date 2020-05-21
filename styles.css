@@ -34,8 +34,7 @@ img{
 /*End of Global styles*/
 
 section{
-    /*padding: 5rem 0;*/
-    padding: 6rem;
+    padding: 5rem 0;
 }
 
 /*Navbar design*/
@@ -491,6 +490,8 @@ input[type="submit"]:hover{
     right: 5rem;
     border-radius: 100%;
     display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
 }
 .up i{
     color: #eb648c;
@@ -504,7 +505,18 @@ input[type="submit"]:hover{
 }
 
 /*Start of Animation*/
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0);
+    }
 
+}
 
 
 
