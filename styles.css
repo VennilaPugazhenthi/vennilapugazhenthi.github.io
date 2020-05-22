@@ -522,6 +522,64 @@ input[type="submit"]:hover{
 
 
 /*Media queries*/
+
+@media screen and (max-width: 768px) {
+    .about-heading h1{
+        font-size: 8rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;
+    }
+    .about-details .nav-list-social-media{
+        flex-direction: initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before{
+        left: -20rem;
+    }
+    .timeline .date::after{
+        left: -5.7rem ;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .about .container{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+    .projects-item{
+        flex-direction: column;
+    }
+    .project-img{
+        margin: 0 0 2rem 0;
+        order:1;
+    }
+    .project-description{
+        margin: 0;
+        order: 2;
+    }
+    .timeline p{
+        font-size: 1.6rem;
+    }
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
+    }
+}
 @media screen and (min-width: 350px){
     .main-message{
         transform: translateY(40%);
