@@ -26,6 +26,12 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 },600);
         return false;
     });
+
+    AOS.init({
+        easing:'ease',
+        duration:1800,
+        once:true
+    })
 });
 
 
