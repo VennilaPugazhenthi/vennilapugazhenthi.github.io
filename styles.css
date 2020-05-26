@@ -11,7 +11,7 @@ html{
     font-family: 'Nunito', sans-serif;
     font-size:10px;
     box-sizing: border-box;
-
+    /*scroll-behavior: smooth;*/
 }
 
 a{
@@ -45,7 +45,6 @@ header{
     top:0;
     left: 0;
     z-index:1;
-
 }
 /*new*/
 .main-message{
@@ -94,6 +93,8 @@ nav{
     justify-content: center;
     z-index: 1500;
     transition: all 650ms ease-in-out;
+
+
 }
 
 .nav-list.active{
@@ -522,6 +523,7 @@ input[type="submit"]:hover{
     }
 
 }
+
 
 
 

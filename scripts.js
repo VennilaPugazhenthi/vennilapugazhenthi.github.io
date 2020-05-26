@@ -8,6 +8,10 @@ selectElement('.open').addEventListener('click', () =>{
 selectElement('.close').addEventListener('click', () =>{
     selectElement('.nav-list').classList.remove('active');
 });
+//Close the menu on clicking the nav-link
+selectElement('.nav-list').addEventListener('click', () =>{
+    selectElement('.nav-list').classList.remove('active');
+});
 
 
 $(document).ready(function(){
@@ -19,8 +23,9 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
+        $("html, body").animate({ scrollTop: 0 },600);
         return false;
     });
 });
+
 
