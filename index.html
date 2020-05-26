@@ -39,7 +39,7 @@
                     <a href="index.html" class="nav-link current">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="file/Resume_Vennila_Pugazhenthi.pdf" class="nav-link" target="_blank">Resume</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About me</a>
@@ -67,7 +67,7 @@
                 <h3>And I'm a Developer</h3>
                 <p>This webiste is a work under progress</p>
                 <div class="cta">
-                    <a href="#" class="btn">Hire me!</a>
+                    <a href="file/Resume_Vennila_Pugazhenthi.pdf" class="btn" target="_blank">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -95,11 +95,6 @@
                 </p>
                 <div class="social-media">
                     <ul class="nav-list-social-media">
-<!--                        <li>-->
-<!--                            <a href="#" class="icon-link">-->
-<!--                                <i class="fab fa-facebook-square"></i>-->
-<!--                            </a>-->
-<!--                        </li>-->
                         <li>
                             <a href="https://github.com/VennilaPugazhenthi" class="icon-link" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -197,22 +192,19 @@
                 <h1>Contact</h1>
                 <h6>Let's work together</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="300">
+            <form action="mailto:vennilapugazhenthi@gmail.com" method="post" enctype="text/plain" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email..." required>
 
-                <label for="services">Services:</label>
-                <select name="services" id="services">
-                    <option value="">Web design</option>
-                    <option value="">Web development</option>
-                    <option value="">Web design/Web development</option>
-                </select>
 
                 <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="text" id="subject" name="subject" placeholder="Subject of the email..." required>
+
+                <label for="content">Content:</label>
+                <textarea name="content" id="content" cols="10" rows="10"></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
