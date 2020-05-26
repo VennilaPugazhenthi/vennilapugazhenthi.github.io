@@ -103,6 +103,7 @@ nav{
     color: #eb648c;
     content: "\00d7";
     font-weight: 300;
+    font-size: 3.5rem;
     font-family: Arial, sans-serif;
 }
 
@@ -286,6 +287,7 @@ nav{
 }
 .social-media i{
     font-size: 5rem;
+    color: #000000;
     transition: color 650ms;
 }
 .fa-facebook-square:hover{
