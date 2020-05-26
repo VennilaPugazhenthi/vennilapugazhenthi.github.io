@@ -70,15 +70,42 @@ nav{
 .nav-brand{
     width:2rem;
 }
+/*.menu-icons{*/
+/*    font-size: 3.5rem;*/
+/*    color: #fafafa;*/
+/*    cursor: pointer;*/
+/*}*/
+
 .menu-icons{
-    font-size: 3.5rem;
-    color: #fafafa;
+    display: inline-block;
     cursor: pointer;
+    font-size:3.5rem ;
+    color: #000000;
+}
+.bar1,.bar2,.bar3{
+    width: 35px;
+    height: 5px;
+    background-color:#fafafa ;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-.close i{
+/*.close i{*/
+/*    color: #eb648c;*/
+/*}*/
+/*.icon{*/
+/*    color: #eb648c;*/
+/*    content: 'x';*/
+/*    font-weight: 300;*/
+/*}*/
+
+.close_it:before{
     color: #eb648c;
+    content: "\00d7";
+    font-weight: 300;
+    font-family: Arial, sans-serif;
 }
+
 
 .nav-list{
     width: 25rem;
@@ -106,6 +133,8 @@ nav{
     position: absolute;
     top: 1rem;
     left: 1.5rem;
+    /*color: #eb648c;*/
+    font-size: 3.5rem;
 }
 
 .nav-item{
