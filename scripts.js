@@ -12,6 +12,8 @@ selectElement('.close').addEventListener('click', () =>{
 selectElement('.nav-list').addEventListener('click', () =>{
     selectElement('.nav-list').classList.remove('active');
 });
+
+//Animate on scroll
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
