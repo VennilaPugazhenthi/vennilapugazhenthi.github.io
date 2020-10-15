@@ -8,7 +8,7 @@
 }
 
 html{
-    font-family: 'Times New Roman', sans-serif;
+    font-family: "Palatino Linotype";
     font-size:10px;
     box-sizing: border-box;
     /*scroll-behavior: smooth;*/
@@ -70,11 +70,6 @@ nav{
 .nav-brand{
     width:2rem;
 }
-/*.menu-icons{*/
-/*    font-size: 3.5rem;*/
-/*    color: #fafafa;*/
-/*    cursor: pointer;*/
-/*}*/
 
 .menu-icons{
     display: inline-block;
@@ -89,15 +84,6 @@ nav{
     margin: 6px 0;
     transition: 0.4s;
 }
-
-/*.close i{*/
-/*    color: #eb648c;*/
-/*}*/
-/*.icon{*/
-/*    color: #eb648c;*/
-/*    content: 'x';*/
-/*    font-weight: 300;*/
-/*}*/
 
 .close_it:before{
     color: #eb648c;
@@ -268,6 +254,10 @@ nav{
     font-size: 10rem;
     opacity: 0.3;
 }
+
+.about-heading h1:hover{
+   color: rgba(49,24,131,0.9) ;
+}
 .about-heading h6{
     font-size: 2rem;
     font-weight: 300;
@@ -280,14 +270,20 @@ nav{
 .about-details{
     flex: 1;
 }
+.about-details p{
+    font-size: 25px;
+}
 
 .social-media{
     margin-top: 5rem;
 }
 .social-media i{
     font-size: 5rem;
-    color: #000000;
+    color: rgba(0,0,0,0.3);
     transition: color 650ms;
+}
+.fa-github:hover{
+    color: rgb(33,31,31);
 }
 .fa-facebook-square:hover{
     color: #4267b2;
