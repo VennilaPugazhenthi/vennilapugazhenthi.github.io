@@ -597,6 +597,10 @@ input[type="submit"]:hover{
         height: 70%;
 
     }
+    .about-details p{
+        font-size: 18px;
+    }
+    
     .projects-item{
         flex-direction: column;
     }
