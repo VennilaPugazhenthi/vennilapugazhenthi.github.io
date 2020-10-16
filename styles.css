@@ -322,7 +322,8 @@ nav{
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(128,128,128,1);
+    /*background-color: rgba(128,128,128,1);*/
+    background-color: #eb648c;
     /*background-color: rgba(255);*/
 
 
@@ -395,7 +396,7 @@ nav{
 }
 /*End of Project Design*/
 .timeline-items{
-    border-left: 4px solid #2f67cd;
+    border-left: 4px solid #7e6add;
     border-radius: 0.8rem;
     background-color: rgba(0,0,0,0.05);
     margin: 0 auto;
@@ -517,7 +518,7 @@ input[type="submit"]:hover{
     width:50px;
     height:50px;
 
-    background-color:#2f67cd ;
+    background-color:#5a4aaa;
     animation: pulse 2s infinite;
 
     text-indent:-9999px;
@@ -600,7 +601,7 @@ input[type="submit"]:hover{
     .about-details p{
         font-size: 18px;
     }
-    
+
     .projects-item{
         flex-direction: column;
     }
