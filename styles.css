@@ -385,14 +385,14 @@ nav{
 .project-description .cta{
     display: inline-block;
     margin-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    color: #3883ff;
+    color: rgba(0,0,0,0.3);
     transition: color 650ms;
 }
 
 .project-description .cta:hover{
-    color: #2f67cd;
+    color: #000000;
 }
 /*End of Project Design*/
 .timeline-items{
