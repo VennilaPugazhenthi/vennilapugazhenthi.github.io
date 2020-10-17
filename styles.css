@@ -386,7 +386,7 @@ nav{
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 3rem;
-    text-transform: uppercase;
+    text-align: center;
     color: #000000;
     transition: color 650ms;
 }
@@ -592,7 +592,7 @@ input[type="submit"]:hover{
     .profile-img{
         margin: 0 0 7rem 0;
         width: 90%;
-        height: 70%;
+        height: 40%;
 
     }
     .about-details p{
@@ -605,6 +605,7 @@ input[type="submit"]:hover{
     .project-img{
         margin: 0 0 2rem 0;
         order:1;
+        width: 80%;
     }
     .project-description{
         margin: 0;
@@ -622,6 +623,14 @@ input[type="submit"]:hover{
     .up{
         right: 2rem;
     }
+}
+@media screen and (max-width: 700px) {
+    .profile-img{
+        margin: 0 0 7rem 0;
+        width: 90%;
+        height: 50%;
+    }
+
 }
 @media screen and (min-width: 350px){
     .main-message{
