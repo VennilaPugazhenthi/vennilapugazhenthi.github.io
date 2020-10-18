@@ -355,10 +355,10 @@ nav{
 .projects-item:last-child{
     margin-bottom: 0;
 }
-.project-img{
-    width: 50rem;
-    flex: 1;
-}
+/*.project-img{*/
+/*    max-width: 50%;*/
+/*    flex: 1;*/
+/*}*/
 
 .has-margin-right{
     margin-right: 5rem ;
