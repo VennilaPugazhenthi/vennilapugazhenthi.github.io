@@ -636,6 +636,10 @@ input[type="submit"]:hover{
     .main-message{
         transform: translateY(40%);
     }
+   .timeline .date::before{
+       font-size: 1.1rem;
+
+   }
 }
 @media screen and (min-width: 470px){
     .hero::before{
