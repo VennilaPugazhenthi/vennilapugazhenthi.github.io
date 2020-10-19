@@ -462,7 +462,7 @@ form{
 }
 
 .form label{
-    font-size: 1.5rem;
+    font-size: 3px;
 }
 
 input,
@@ -643,6 +643,9 @@ input[type="submit"]:hover{
         background: url("images/wave-medium.png");
         background-size: cover;
     }
+    .profile-img image{
+        max-height: 50%;
+    }
 }
 
 @media screen and (min-width: 700px){
@@ -705,6 +708,9 @@ input[type="submit"]:hover{
     }
     .title-heading h1{
         font-size: 2.5rem;
+    }
+    .profile-img image{
+        max-height: 50%;
     }
 }
 @media screen and (min-width: 950px){
