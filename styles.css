@@ -640,6 +640,9 @@ input[type="submit"]:hover{
        font-size: 1.1rem;
 
    }
+   .profile-img{
+       height: 50%;
+   }
 }
 @media screen and (min-width: 470px){
     .hero::before{
