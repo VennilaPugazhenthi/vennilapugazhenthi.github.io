@@ -19,28 +19,27 @@
     <!--My Own Stylesheet-->
     <link rel="stylesheet" href="blogStyles.css">
 </head>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+    }
+}
+</script>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Vennila Blogs</a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div class="topnav" id="myTopnav">
+    <a href="#" class="active">Vennila Blogs</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div class="hamburger-icon"></div>
+        <div class="hamburger-icon"></div>
+        <div class="hamburger-icon"></div>
+    </a>
+  </div>
 
 
 <div class="blog-container">
