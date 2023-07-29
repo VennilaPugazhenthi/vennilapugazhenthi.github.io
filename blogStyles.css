@@ -23,6 +23,11 @@ p{
     margin-top: 2rem;
 }
 
+img {
+    max-width: 800px;
+    height: auto;
+}
+
 
 /*Reusable code*/
 .blog-container{
@@ -38,6 +43,7 @@ p{
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 
 .blog-text h2{
@@ -46,7 +52,20 @@ p{
     font-weight: 300;
     opacity: 0.8;
     text-align: left;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
 }
+
+.blog-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.8;
+    text-align: left;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
 
 .code-block{
     background-color: lightgray;
