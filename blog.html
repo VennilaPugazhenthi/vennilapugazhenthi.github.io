@@ -54,10 +54,10 @@
     <h2 class="blog-text">Types of Memory:</h2>
     <p class="blog-text">Since rust is a systems programming language, whether a value is present is stack or heap affects how the code is written. </p>
     <h3 class="blog-text">Stack:</h3>
-    <img src="images\image001_cropped.jpg">
+    <img src="images\image001_cropped.webp">
     <p class="blog-text">All data whose size is fixed and known at compile time will be stored in the stack. For example, an integer variable ‘x’ has a value of 5. Its size is fixed and known at compile time, so it gets stored in the stack.</p>
     <h3 class="blog-text">Heap:</h3>
-    <img src="images\image003.jpg">
+    <img src="images\image003.webp">
     <p>The data whose size is unknown at compile time or if it might change gets stored in the heap. The memory allocator finds a big enough empty spot to store the data and returns a pointer. The pointer contains the address of memory of the data.</p>
     <h2 class="blog-text">Ownership (Stack):</h2>
     <pre class="code-block">
@@ -67,7 +67,7 @@
           </code>
     </pre>
     <p>In this example, the data is of integer type. So, the data reside in a stack. When ‘y’ is initialized with ‘x’, the data get copied to ‘y’. However, the ownership of ‘x’ doesn’t change and ‘y’ gets ownership of new copy of ‘5’. </p>
-    <img src="images\image005.jpg">
+    <img src="images\image005.webp">
     <p>Rule: All the scalar data type in rust has ‘Copy’ trait implemented, which will have same behavior as above. Some of the scalar datatypes with ‘Copy’ trait are: Integer, Boolean, Floating-point, Character, and Tuples if they only contain types that also implement ‘Copy’.</p>
     <h2 class="blog-text">Ownership (Heap):</h2>
     <h3 class="blog-text">Move:</h3>
@@ -78,7 +78,7 @@
             </code>
     </pre>
     <p>In this example, ‘x’ is of String type and it’s stored in the heap. Initializing a variable with another variable with data in the heap, will result in data moving to new variable. Here, “hello” will move to ‘y’ and ‘y’ will gain ownership. ‘x’ will lose ownership and we can no longer use it in the subsequent code.</p>
-    <img src="images\image007.jpg">
+    <img src="images\image007.webp">
     <pre class="code-block">
         <code class="code-text">  
             let x = String::from("hello");
@@ -99,7 +99,7 @@
             </code>
     </pre>
     <p>Here, both the ‘x’ & ‘y’ will have ownership over its own copy of data.</p>
-    <img src="images\image009.jpg">
+    <img src="images\image009.webp">
     <h2 class="blog-text">Ownership in Functions:</h2>
     <p>So far, we went through three concepts:</p>
     <ol class="ordered-list">
@@ -143,7 +143,7 @@
             }                                 
             </code>
     </pre>
-    <img src="images\image011.jpg">
+    <img src="images\image011.webp">
     <p>Here, ‘s’ doesn’t have ownership of “hello” but it can access the value. The process of creating a reference is known as borrowing. By default, references are immutable and ‘s’ cannot modify the value “hello”.</p>
     <p>Another point to note is that the reference ‘s’ is only valid as long as ‘s1’ is valid. When ‘s1’ goes out of the scope and it loses its ownership, you cannot create a reference of it. </p>
     <h2 class="blog-text">Mutable References:</h2>
@@ -171,7 +171,7 @@
             let world = &s[6..11];                                               
             </code>
     </pre>
-    <img src="images\image013.jpg">
+    <img src="images\image013.webp">
     <p>The String Slice is of type ‘&str’ which is different from ‘&String’. The difference is ‘&str’ is a reference to part of the String which ‘&String’ is reference to the whole value of String.</p>
     <p>As string slice points to a part of the string data, it’s an immutable reference and it can never be a mutable reference.</p>
     <p>String slice is specific to String datatype, but you can have slice of other collections. For example, below is slice of integer array of type ‘&[i32]’</p>
